@@ -10,7 +10,7 @@ all you have to do click the url and type the name check the example below also 
 
 2. replace the url with mongo connection url
 
-example :  "mongodb://localhost:27017/todolistDB"
+ example :  "mongodb://localhost:27017/todolistDB"
 
 # must have in you machine 
 
@@ -29,8 +29,8 @@ example :  "mongodb://localhost:27017/todolistDB"
 
 2. hit the + button and add task lets say 20 Reps - Chest - 80kg etc ...
 
-3. you came back from the gym finished your training now all you had to do to update for the next day just click on the checkbox its will remove it.
+3. you came back from the gym finished your training now all you had to do to update for the next day just click on the checkbox it will remove it.
 
 
 
-have fun and dont miss any task you need to for that current day.
+  have fun and dont miss any task you need to for that current day.
