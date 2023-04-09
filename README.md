@@ -10,7 +10,7 @@ all you have to do click the url and type the name check the example below also 
 
 2. replace the url with mongo connection url
 
-example:mongodb://localhost:27017/todolistDB"
+example :  "mongodb://localhost:27017/todolistDB"
 
 # must have in you machine 
 
