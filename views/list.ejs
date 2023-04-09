@@ -1,0 +1,47 @@
+<%- include("header") -%>
+    <div class="box" id="heading">
+        <h1>
+            <%=ListTitle%>
+        </h1>
+    </div>
+    <div class="box">
+        <% task.forEach((value)=> { %>
+            <form action="/delete" method="post">
+                <div class="item">
+                    <input type="checkbox" onchange="this.form.submit()" name="checkbox" value="<%=value._id%>">
+                    <p>
+                        <%= value.name %>
+                    </p>
+                </div>
+                <input type="hidden" name="list_delete" value="<%= ListTitle %>">
+            </form>
+            <% }); %>
+                <form class="item" action="/" method="post">
+                    <input type="text" name="to_do" placeholder="New Task" autocomplete="off" id="text_holder">
+                    <button type="submit" name="list" id="add_button" value="<%= ListTitle %>">+</button>
+                </form>
+    </div>
+    <div class="popup" id="popup">
+        <img class="img" src="/res/cross.png" alt="cross">
+        <h2>Must fill the field</h2>
+        <div>fill the field please</div>
+        <button id="confirm_button">confirm</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            let popup = document.getElementById("popup");
+            $('#add_button').click(function () {
+                let value = document.getElementById("text_holder").value;
+                if (value === '') {
+                    popup.classList.add("open_popup");
+                    return false;
+                }
+            });
+            $('#confirm_button').click(function () {
+                popup.classList.remove("open_popup");
+            });
+        });
+    </script>
+
+    <%- include("footer") -%>
