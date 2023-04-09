@@ -1,6 +1,6 @@
 # ToDolist
 
-a web appliaction that will help you organize your daily tasks by simple creating new url for each category.
+a web appliaction that will help you organize your daily tasks by simply creating new url for each category.
 
 all you have to do click the url and type the name check the example below also you can create as much pages as you want (gym, studies, shopping etc ...).
 
