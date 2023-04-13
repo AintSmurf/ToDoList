@@ -12,7 +12,7 @@ all you have to do click the url and type the name check the example below also 
 
  example :  "mongodb://localhost:27017/todolistDB"
 
-# must have in you machine 
+# must have in your machine/PC
 
 1. npm.
 
